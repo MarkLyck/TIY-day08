@@ -19,26 +19,20 @@ var inputValues = [undefined,
 ];
 
 var outputValues = inputValues.map(function(value) {
-  var coNumber = Number(value);
-  var coString = String(value);
-  var coBoolean = Boolean(value);
 
   var row = document.createElement('tr');
-  var tabledata = document.createElement('td');
 
-  var textnode = document.createTextNode(value);
-  var textnode2 = document.createTextNode(coNumber);
-  var textnode3 = document.createTextNode(coString);
-  var textnode4 = document.createTextNode(coBoolean);
+  var coNumber = document.createElement('td');
+  coNumber.innerHTML = Number(value);
+  row.appendChild(coNumber);
+  
+  var coString = document.createElement('td');
+  coString.innerHTML = String(value);
+  row.appendChild(coString);
 
-  tabledata.appendChild(textnode);
-  tabledata.appendChild(textnode2);
-  tabledata.appendChild(textnode3);
-  tabledata.appendChild(textnode4);
+  var coBoolean = document.createElement('td');
+  coBoolean.innerHTML = Boolean(value);
+  row.appendChild(coBoolean);
 
-  row.appendChild(tabledata);
-  var table = document.querySelector('#table').appendChild(row);
-
-  // console.log("oldVal: " + value + "numVal: " + coNumber + "strVal: " + coString + "boolVal: " + coBoolean);
-  // console.log();
+  document.querySelector('#table').appendChild(row);
 });
