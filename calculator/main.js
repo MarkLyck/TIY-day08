@@ -1,13 +1,13 @@
 window.onload = function () {
 
-  document.body.addEventListener('keypress', function(e) {
-    var key = e.keyCode;
-    if (key === 8) {
-      console.log("BACKSPACE");
-    } else {
-      var results = calculate();
-      console.log(results);
-    }
+  // document.body.addEventListener('keypress', function(e) {
+  //   var key = e.keyCode;
+  //   if (key === 8) {
+  //     console.log("BACKSPACE");
+  //   } else {
+  //     var results = calculate();
+  //     console.log(results);
+  //   }
     // console.log(e.keyCode);
     // if (key === 13) {
     //   // Enter key
@@ -17,7 +17,7 @@ window.onload = function () {
     // } else if (key === 8) {
     //   // Backspace key
     // }
-  });
+  // });
 
   var buttons = document.getElementsByTagName('button'); // Select all buttons
   var result = document.querySelectorAll('#output')[0]; // Select the result p tag
@@ -27,10 +27,10 @@ window.onload = function () {
   // Loop through all buttons and add event listeners
   for (var i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener("click", addValue(i));
-    // buttons[i].addEventListener("click", calculate());
+    buttons[i].addEventListener("click", calculate());
   }
   function addValue(i) {
-      // return function () {
+      return function () {
         if (buttons[i].innerHTML === '÷') { // We need to replace this with an operator JS can understand
            input.value  += '/';
         } else if (buttons[i].innerHTML === 'x') { // We need to replace this with an operator JS can understand
@@ -42,19 +42,19 @@ window.onload = function () {
         } else {
            input.value += buttons[i].innerHTML; // This adds the content of the button to the input
         }
-      // };
+      };
   }
   function calculate() {
-    console.log("CALC");
-  // return function () {
-  //     console.log("CALC");
-  //     if(input.value === '') {
-  //       result.innerHTML = 0;
-  //     } else {
-  //       // This will throw an error when the input ends with an operator.
-  //       result.innerHTML = eval(input.value);
-  //     }
-  //   // };
+    // console.log("CALC");
+  return function () {
+      // console.log("CALC");
+      if(input.value === '') {
+        result.innerHTML = 0;
+      } else {
+        // This will throw an error when the input ends with an operator.
+        result.innerHTML = eval(input.value);
+      }
+    };
   }
 };
 
