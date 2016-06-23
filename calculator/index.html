@@ -3,17 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" media="screen">
+    <link rel="stylesheet" href="main.css" media="screen">
   </head>
   <body>
-    <form class="" action="index.html" method="post">
+    <div class="calculator">
+      <div class="output-container">
+        <p id="output">0</p>
+      </div>
+      <div class="wrapper">
+        <form>
+          <button id="clear" type="button" name="button">C</button>
+          <input id="input" type="text" name="name" value="">
+        </form>
+        <div class="input-container">
+          <div class="input-numbers">
+            <button class="input-button" id="one" type="button" name="1">1</button>
+            <button class="input-button" id="two" type="button" name="2">2</button>
+            <button class="input-button" id="three" type="button" name="3">3</button>
+            <button class="input-button" id="four" type="button" name="4">4</button>
+            <button class="input-button" id="five" type="button" name="5">5</button>
+            <button class="input-button" id="six" type="button" name="6">6</button>
+            <button class="input-button" id="seven" type="button" name="7">7</button>
+            <button class="input-button" id="eight" type="button" name="8">8</button>
+            <button class="input-button" id="nine" type="button" name="9">9</button>
+            <button class="input-button" id="dot" type="button" name="dot">.</button>
+            <button class="input-button" id="zero" type="button" name="0">0</button>
+            <button class="input-button" id="backspace" type="button" name="backspace">DEL</button>
+          </div>
+          <div class="operators">
+            <button id="divide" type="button" name="divide">÷</button>
+            <button id="multiply" type="button" name="multiply">x</button>
+            <button id="subtract" type="button" name="subtract">-</button>
+            <button id="addition" type="button" name="addition">+</button>
+            <!-- <button id="equals" type="button" name="equals">=</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Satisfies Adventurer mode -->
+    <!-- <form class="" action="index.html" method="post">
       <input id="number1" type="text" name="name">
       <input id="number2" type="text" name="name">
       <button id="add" type="button" name="calculate">Add</button>
       <button id="sub" type="button" name="subtract">Subtract</button>
       <button id="mul" type="button" name="multiply">Multiply</button>
       <button id="div" type="button" name="divide">Divide</button>
-      <p id="outPut"></p>
-    </form>
+      <p id="out-put"></p> -->
+    <!-- </form> -->
     <script src="main.js" type="text/javascript"></script>
   </body>
 </html>
