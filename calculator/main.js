@@ -1,7 +1,7 @@
 window.onload = function () {
 
   // Using KeyDown here instead of keypress, so it will catch backspace
-  document.body.addEventListener('keydown', function(e) {
+  document.body.addEventListener('keyup', function(e) {
     var key = e.keyCode;
     // If the ENTER key is pressed
     if (key === 13) {
