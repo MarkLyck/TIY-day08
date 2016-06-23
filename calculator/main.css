@@ -57,11 +57,12 @@ form > button {
   display: flex;
   flex-wrap: wrap;
   width: 75%;
+  background: #333847;
 }
 
 .input-numbers button {
   height: 14vh;
-  min-width: 33.33333333%;
+  min-width: calc(100%/3);
   background: #2F3343;
   border: 1px solid #333847;
 }

@@ -60,8 +60,7 @@ window.onload = function () {
 
 
 
-
-
+// This code would satisfy adventurer mode for calculator.
 //
 // document.querySelector('#add').addEventListener("click", function(){
 //   var number1 = document.querySelector('#number1');
