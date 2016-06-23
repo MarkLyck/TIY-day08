@@ -17,7 +17,7 @@ window.onload = function () {
 
   var buttons = document.getElementsByTagName('button'); // Select all buttons
   var result = document.querySelector('#output'); // Select the result p tag
-  var input = document.querySelectorAll('#input')[0]; // Select the input-field
+  var input = document.querySelector('#input'); // Select the input-field
   var clear = document.querySelector('#clear'); // Select the clearAll-button
 
   // Loop through all buttons and add event listeners
