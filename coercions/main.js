@@ -22,10 +22,14 @@ var outputValues = inputValues.map(function(value) {
 
   var row = document.createElement('tr');
 
+  var coValue = document.createElement('td');
+  coValue.innerHTML = value;
+  row.appendChild(coValue);
+
   var coNumber = document.createElement('td');
   coNumber.innerHTML = Number(value);
   row.appendChild(coNumber);
-  
+
   var coString = document.createElement('td');
   coString.innerHTML = String(value);
   row.appendChild(coString);

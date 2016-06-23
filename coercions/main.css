@@ -1,11 +1,15 @@
 table {
-  background: red;
+  /*background: red;*/
+  width: 100%;
+  height: 100vh;
 }
 
 tr {
-  background: blue;
+  /*background: blue;*/
 }
 
 td {
-  background: green;
+  text-align: center;
+  /*background: green;*/
+  border: 1px solid gray;
 }
