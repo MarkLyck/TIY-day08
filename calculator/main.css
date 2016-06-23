@@ -40,6 +40,8 @@ form > input {
   width: 75%;
   height: 14vh;
   outline: none;
+  padding-left: 25px;
+  box-sizing: border-box;
 }
 form > button {
   width: 25%;
