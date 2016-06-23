@@ -16,7 +16,7 @@ window.onload = function () {
   });
 
   var buttons = document.getElementsByTagName('button'); // Select all buttons
-  var result = document.querySelectorAll('#output')[0]; // Select the result p tag
+  var result = document.querySelector('#output'); // Select the result p tag
   var input = document.querySelectorAll('#input')[0]; // Select the input-field
   var clear = document.querySelector('#clear'); // Select the clearAll-button
 
