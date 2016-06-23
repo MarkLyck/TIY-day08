@@ -20,8 +20,6 @@ window.onload = function () {
   var input = document.querySelectorAll('#input')[0]; // Select the input-field
   var clear = document.querySelector('#clear'); // Select the clearAll-button
 
-// bind
-
   // Loop through all buttons and add event listeners
   for (var i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener("click", addValue.bind(null, i));
